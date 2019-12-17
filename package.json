@@ -1,0 +1,35 @@
+{
+    "name": "fts-result",
+    "version": "1.0.0",
+    "description": "A Result type to represent the return of functions that may return an error.",
+    "main": "lib/src/Result.js",
+    "types": "lib/src/Result.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CharlesShuller/fts-result.git"
+    },
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "test": "node ./node_modules/jest/bin/jest.js --config jestconfig.json",
+        "build": "./node_modules/typescript/bin/tsc",
+        "doc": "./node_modules/typedoc/bin/typedoc ./src"
+    },
+    "author": {
+        "name": "Charles Shuller",
+        "email": "charles.shuller@gmail.com"
+    },
+    "license": "LGPL-3.0-or-later",
+    "devDependencies": {
+        "@types/jest": "^24.0.18",
+        "jest": "^24.9.0",
+        "ts-jest": "^24.1.0",
+        "typedoc": "^0.15.0",
+        "typescript": "^3.6.4"
+    },
+    "dependencies": {
+        "fts-functor": "^1.0.0",
+        "fts-monad": "^1.1.1"
+    }
+}
