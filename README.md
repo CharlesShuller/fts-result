@@ -2,7 +2,8 @@ Result
 ===============================================================================
 Result is a type used extensively in functional programming (in Haskell, you
 should refer to the Data.Either package).  It's chief value is to handle error
-propigation in a purely functional way.  It is extremely simmilar to Maybe.
+propigation in a purely functional way.  It's a lot like an enhanced version
+of Maybe.
 
 From a different perspective, we use result to avoid _handling_ exceptions.
 Throwing an exception can still be purely functional, but catching exceptions
@@ -49,7 +50,7 @@ const okFromNullable = Result.fromNullable(12, new Error("should never see this"
 ```
 
 
-Unbox a maybe value:
+Unbox a result value:
 ```
 //Alias the whole package
 import * as Result from 'fts-result';
